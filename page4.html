@@ -1,12 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru" class="h-100" style="min-height: 100vh;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/custom_style.css">
     <title>Контакты</title>
 </head>
-<body>
 
+<body class="h-100" style="min-height: 100vh;">
+<div class="container-fluid h-100 g-0" style="min-height: 100%;">
+    <div class="row h-100 g-0" style="min-height: 100%;">
+        <!-- Левая колонка -->
+        <div class="col-md-2 h-100 bg-dark rounded-start-5 d-flex flex-column" style="min-height: 100%;">
+            <div class="flex-grow-1 p-3" style="min-height: 0;">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item text-white bg-dark">
+                        <div class="menu-header">
+                            <span class="fw-bold fs-1">{B}</span>
+                            <span class="fw-bold fs-2">Меню</span>
+                        </div>
+                    </li>
+                    <li class="list-group-item text-white bg-dark fs-4">Главная</li>
+                    <li class="list-group-item text-white bg-dark fs-4">Категории</li>
+                    <li class="list-group-item text-white bg-dark fs-4">Заказы</li>
+                    <li class="list-group-item text-white bg-primary fs-4">Контакты</li>
+                </ul>
+            </div>
+
+            <!-- Блок пользователя -->
+            <div class="p-3 border-top border-secondary">
+                <div class="user-menu">
+                    <div class="d-flex align-items-center" style="cursor: pointer;">
+                        <img src="https://media.tproger.ru/user-uploads/33794/2025-01-24/a360ba55-7f0d-4753-ac22-e92723e1405f.png"
+                             alt="User" class="user-avatar">
+                        <span class="text-white">Пользователь</span>
+                    </div>
+                    <div class="user-dropdown">
+                        <a href="#">Профиль</a>
+                        <a href="#">Выход</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Правая колонка -->
+        <div class="col-md-10 h-100 bg-body-secondary rounded-end-5 d-flex flex-column" style="min-height: 100%;">
+            <div class="flex-grow-1" style="min-height: 0; overflow-y: auto;">
+                <div class="container text-center p-4">
+                    <h1 class="mb-3">Свяжитесь с нами</h1>
+                    <p class="fs-5 text-body-secondary">Мы всегда рады вашим вопросам и предложениям</p>
+                </div>
+
+                <div class="container">
+                    <div class="row justify-content-center g-4">
+                        <!-- Форма контактов клиента -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="contact-form">
+                                <h2 class="text-center mb-4">Напишите нам</h2>
+                                <form>
+                                    <div class="mb-3">
+                                        <label for="name" class="form-label">Ваше имя</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Иван Иванов" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="email" class="form-label">Email</label>
+                                        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="phone" class="form-label">Телефон (необязательно)</label>
+                                        <input type="tel" class="form-control" id="phone" placeholder="+7 (123) 456-78-90">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="message" class="form-label">Сообщение</label>
+                                        <textarea class="form-control" id="message" rows="5" placeholder="Ваше сообщение..." required></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary btn-submit">Отправить сообщение</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!-- Наши контакты -->
+                        <div class="col-lg-6 col-md-12">
+                            <div class="contact-card">
+                                <h3 class="text-center">Наши контакты</h3>
+
+                                <div class="contact-info">
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-map-marker-alt"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <h5>Адрес</h5>
+                                            <p>г. Москва, ул. Примерная, д. 123, офис 45</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-phone-alt"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <h5>Телефон</h5>
+                                            <p>+7 (123) 456-78-90</p>
+                                            <p>+7 (987) 654-32-10</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <h5>Email</h5>
+                                            <p>info@example.com</p>
+                                            <p>support@example.com</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="contact-item">
+                                        <div class="contact-icon">
+                                            <i class="fas fa-clock"></i>
+                                        </div>
+                                        <div class="contact-text">
+                                            <h5>Часы работы</h5>
+                                            <p>Пн-Пт: 9:00 - 18:00</p>
+                                            <p>Сб-Вс: выходной</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="social-links">
+                                    <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-telegram"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

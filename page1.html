@@ -1,78 +1,19 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en" class="h-100" style="min-height: 100vh;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom_style.css">
     <title>Главная</title>
-    <style>
-        /* Дополнительные стили для скругления углов */
-        .rounded-start-5 {
-            border-top-left-radius: 1rem !important;
-            border-bottom-left-radius: 1rem !important;
-        }
-
-        .rounded-end-5 {
-            border-top-right-radius: 1rem !important;
-            border-bottom-right-radius: 1rem !important;
-        }
-
-        /* Стили для меню пользователя */
-        .user-menu {
-            position: relative;
-            display: inline-block;
-        }
-
-        .user-dropdown {
-            display: none;
-            position: absolute;
-            bottom: 100%;
-            left: 0;
-            background-color: #343a40;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-            border-radius: 0.25rem;
-        }
-
-        .user-menu:hover .user-dropdown {
-            display: block;
-        }
-
-        .user-dropdown a {
-            color: white;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-        }
-
-        .user-dropdown a:hover {
-            background-color: #495057;
-        }
-
-        .user-avatar {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-right: 10px;
-        }
-
-        /* Выравнивание логотипа и меню */
-        .menu-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-    </style>
 </head>
 
-<body class="h-100">
-<div class="container-fluid h-100 g-0">
-    <div class="row h-100 g-0">
+<body class="h-100" style="min-height: 100vh;">
+<div class="container-fluid h-100 g-0" style="min-height: 100%;">
+    <div class="row h-100 g-0" style="min-height: 100%;">
         <!-- Левая колонка -->
-        <div class="col-md-3 h-100 bg-dark rounded-start-5 d-flex flex-column">
-            <div class="flex-grow-1 p-3">
+        <div class="col-md-2 h-100 bg-dark rounded-start-5 d-flex flex-column" style="min-height: 100%;">
+            <div class="flex-grow-1 p-3" style="min-height: 0;">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item text-white bg-dark">
                         <div class="menu-header">
@@ -91,7 +32,7 @@
             <div class="p-3 border-top border-secondary">
                 <div class="user-menu">
                     <div class="d-flex align-items-center" style="cursor: pointer;">
-                        <img src="https://via.placeholder.com/40" alt="User" class="user-avatar">
+                        <img src="https://media.tproger.ru/user-uploads/33794/2025-01-24/a360ba55-7f0d-4753-ac22-e92723e1405f.png" alt="User" class="user-avatar">
                         <span class="text-white">Пользователь</span>
                     </div>
                     <div class="user-dropdown">
@@ -103,8 +44,8 @@
         </div>
 
         <!-- Правая колонка -->
-        <div class="col-md-9 h-100 bg-body-secondary rounded-end-5 d-flex flex-column">
-            <div class="flex-grow-1">
+        <div class="col-md-10 h-100 bg-body-secondary rounded-end-5 d-flex flex-column content-column" style="min-height: 100%;">
+            <div class="flex-grow-1" style="min-height: 0;">
                 <div class="container text-center pt-5 mt-5">
                     <h1>Главная</h1>
                     <p class="fs-6 text-body-tertiary">Вы находитесь на сайте, предназначенном для продажи товаров</p>
@@ -112,7 +53,7 @@
                 <div class="row justify-content-center">
                     <div class="container p-3 m-3">
                         <div class="row p-4 m-4">
-                            <div class="col-4 p-5">
+                            <div class="col-12 col-md-4 p-3 p-md-5">
                                 <div class="card m-2">
                                     <div class="card-header text-center fs-3">
                                         Товар 1
@@ -127,7 +68,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 p-5">
+                            <div class="col-12 col-md-4 p-3 p-md-5">
                                 <div class="card m-2">
                                     <div class="card-header text-center fs-3">
                                         Товар 2
@@ -142,7 +83,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-4 p-5">
+                            <div class="col-12 col-md-4 p-3 p-md-5">
                                 <div class="card m-2">
                                     <div class="card-header text-center fs-3">
                                         Товар 3
@@ -154,7 +95,6 @@
                                         <div class="d-grid">
                                             <a href="#" class="btn btn-primary">Купить</a>
                                         </div>
-
                                     </div>
                                 </div>
                             </div>
